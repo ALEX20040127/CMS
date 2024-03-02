@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <title>课程管理系统————注册</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- 前端框架，文档：https://v4.bootcss.com/docs/getting-started/introduction/ -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <!-- Datatables是一款jquery表格插件。可以方便的实现表格中的排序、分页、查找 -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css'>
+  <!-- Font Awesome 是一套绝佳的图标字体库和CSS框架。包含了一些图标和对应的css框架 -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="static/css/login.css">
+</head>
+
+<body>
+<div class="container-fluid">
+        <!-- 主界面（container-fluid） -->
+ 
+<form class="registration" method="post">
+    <h1>👋 欢迎!</h1>
+    <div id="login">
+        <div class="pure-material-textfield-outlined">
+            <input placeholder="请输入用户名" type="userID" id="userID" required>
+         </div>
+
+        <div class="pure-material-textfield-outlined">
+            <input placeholder="请输入用户id" type="userName" id="userName" required>
+        </div>
+  
+        <div class="pure-material-textfield-outlined">
+            <input placeholder="请输入密码" type="userPwd" id="userPwd" required>
+        </div>
+        <div class="errors" id="loginError"></div>
+
+        <div class='userIdentity'>
+            <select name='user-identity'>
+            <option value='manager' selected>教师</option>
+            <!-- <option value='student'>学生</option> -->
+            </select>
+        </div>
+    </div>
+    <button id="btnRegister" type="button">注册</button>
+  
+  </form>
+  
+</div>
+</body>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js'></script>
+    <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script>
+    <script src="src\js\script.js"></script>
+    <script src="src\js\commons.js"></script>
+    <script src="src\js\settings.js"></script>
+    <script src="src\js\login.js"></script>
+    <script src="src\js\main.js"></script>
+  
+
+  
+  
+  </body>
+  
+  </html>

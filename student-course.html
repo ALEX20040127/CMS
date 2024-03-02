@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <title>课程管理系统————课程详情</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- 前端框架，文档：https://v4.bootcss.com/docs/getting-started/introduction/ -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <!-- Datatables是一款jquery表格插件。可以方便的实现表格中的排序、分页、查找 -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css'>
+  <!-- Font Awesome 是一套绝佳的图标字体库和CSS框架。包含了一些图标和对应的css框架 -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="static\css\style.css">
+  <link rel="stylesheet" href="static\css\course.css">
+
+</head>
+
+<body>
+
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- 导航区域（navigation）-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <a class="navbar-brand" href="course-list.html">课程评价系统</a>
+      <!-- 移动端响应式导航栏按钮 -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="course">
+            <a class="nav-link" href="course-list.html">
+              <i class="fa fa-book"></i>
+              <span class="nav-link-text">课程列表</span>
+            </a>
+          </li>
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="infor">
+            <a class="nav-link" href="score_inquiry.html">
+              <i class="fa fa-user"></i>
+              <span class="nav-link-text">成绩查询</span>
+            </a>
+          </li>
+        
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="infor">
+            <a class="nav-link" href="self-information.html">
+              <i class="fa fa-user"></i>
+              <span class="nav-link-text">个人信息</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>登出</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content-wrapper">
+      <!-- 主界面（container-fluid） -->
+      <div class="container-fluid">
+
+        <div class="col-12">
+          <h3 class="page-title">课程详情</h3>
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="course-list.html">课程列表</a></li>
+            <li class="breadcrumb-item active">课程详情</li>
+          </ul>
+        </div>
+
+        
+      </div>
+      <!-- /.container-fluid-->
+      <!-- /.content-wrapper-->
+      <footer class="sticky-footer">
+        <div class="container">
+          <div class="text-center">
+            <small>Copyright © Web20230223</small>
+          </div>
+        </div>
+      </footer>
+      <!-- 回到顶部按钮 -->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      <!-- 登出-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">登出</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">您确认退出吗？</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal" >取消</button>
+              <button class="btn btn-primary" id="logoutBtn">退出</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js'></script>
+  <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script>
+  <script src="src\js\script.js"></script>
+  <script src="src\js\commons.js"></script>
+  <script src="src\js\settings.js"></script>
+  <script src="src\js\components\card.js"></script>
+  <script src="src\js\components\course.js"></script>
+  <script src="src\js\components\table.js"></script>
+  <script src="src\js\main.js"></script>
+
+
+</body>
+
+</html>
